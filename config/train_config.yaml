@@ -1,0 +1,21 @@
+# config/train_config.yaml
+project:
+  root_dir: "/home/iotlab/IOTLAB217/LHZ"
+  project_dir: "/home/iotlab/IOTLAB217/LHZ/PretrainBert"
+
+training:
+  batch_size: 16
+  lr: 5e-5
+  epochs: 3
+  log_interval: 100
+  seed: 42
+  debug_mode: False
+
+runtime:
+  device: "cuda"
+  num_workers: 2
+  pin_memory: true
+
+paths:
+  save_dir: "checkpoints"
+  log_dir: "logs"
